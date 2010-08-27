@@ -1,0 +1,3 @@
+SELECT *
+FROM Products
+FOR XML AUTO, ROOT('ProductList'), ELEMENTS

@@ -1,0 +1,6 @@
+SELECT *
+FROM (
+    SELECT ROW_NUMBER() OVER(ORDER BY ProductName) AS RN ,
+       *
+    FROM Products ) AS t
+WHERE t.RN BETWEEN 51 AND 60

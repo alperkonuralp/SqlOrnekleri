@@ -1,0 +1,10 @@
+SELECT OrderID, SUM(Quantity * UnitPrice)
+FROM [Order Details]
+GROUP BY OrderID 
+HAVING SUM(Quantity*UnitPrice) > 10000
+
+
+SELECT *
+FROM Orders
+WHERE OrderID IN (10353,10372,10417,10424,10479,10515,10540,
+                  10691,10817,10865,10889,10897,10981,11030)

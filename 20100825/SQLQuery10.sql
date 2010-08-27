@@ -1,0 +1,13 @@
+DELETE Ilce
+
+DELETE Il
+WHERE PlakaKodu = 20
+
+DELETE Il 
+WHERE PlakaKodu > 50
+
+DELETE Il
+WHERE IlAdi LIKE 'A%'
+
+SELECT *
+FROM Il

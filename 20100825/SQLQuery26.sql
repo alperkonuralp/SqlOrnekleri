@@ -1,0 +1,19 @@
+BEGIN TRANSACTION
+
+BEGIN TRY
+	
+
+	INSERT INTO Ilce
+	VALUES (20, N'Acýpayam', NULL)
+
+	INSERT INTO Il
+	VALUES ( 20, 'Denizli');
+	
+	COMMIT TRANSACTION  -- problemsiz bitiriþ
+	PRINT 'Ýþlem Tamam'
+END TRY
+BEGIN CATCH
+	ROLLBACK TRANSACTION -- iþleri geri alma
+	PRINT ERROR_MESSAGE()
+	PRINT 'Hata Oluþtu'
+END CATCH

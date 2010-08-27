@@ -1,0 +1,13 @@
+INSERT INTO Ilce
+VALUES (35, N'Torbalý', NULL)
+
+INSERT INTO Ilce(IlKodu, IlceAdi)
+VALUES (35, N'Selçuk')
+
+
+INSERT INTO Ilce
+VALUES (35, N'Menemen', DEFAULT)
+
+
+SELECT *
+FROM Ilce

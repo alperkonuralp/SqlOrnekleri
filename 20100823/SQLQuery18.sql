@@ -1,0 +1,2 @@
+SELECT DENSE_RANK() OVER (ORDER BY OrderID) ,*
+FROM [Order Details]

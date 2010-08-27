@@ -1,0 +1,4 @@
+SELECT ROW_NUMBER() OVER( PARTITION BY OrderID
+		ORDER BY OrderID, ProductID),
+	*
+FROM [Order Details]

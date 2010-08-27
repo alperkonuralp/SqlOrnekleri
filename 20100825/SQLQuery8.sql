@@ -1,0 +1,4 @@
+DELETE Ilce;
+
+SELECT *
+FROM Ilce

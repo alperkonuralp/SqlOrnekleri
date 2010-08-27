@@ -1,0 +1,3 @@
+SELECT *
+FROM Products
+WHERE ProductID BETWEEN 1 AND 10

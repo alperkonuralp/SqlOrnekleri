@@ -1,0 +1,4 @@
+SELECT CustomerID
+FROM Orders
+WHERE OrderDate BETWEEN '1997-02-01' AND 
+		'1997-02-28 23:59:59'

@@ -1,0 +1,2 @@
+SELECT NTILE(100) OVER (ORDER BY OrderID) ,*
+FROM [Order Details]
